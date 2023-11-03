@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTheme2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* FIRST SECTION */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #e0fad0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1cm;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0px 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active {
+    background: #359381;
+    color: #f9f9f9;
+    transition: 0.2s;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#birds {
+    width: 600px; /* Set the width to your desired value */
+    height: auto; /* Maintain the aspect ratio */
+    top: 85%;
+    left: 45%; 
+    transform: translate(-50%, -50%);
+}
+
+/*SECOND SECTION*/
+
+#aboutTitle, #egg {
+    text-align: center;
+  }  
+
+#biography, #hotdog {
+    text-align: center;
+}
+
+
+.aboutTitle{
+    text-align: left;
+}
+
+.Skills {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.Skills h2 {
+    font-size: 1cm;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.Skills p {
+    font-size: 14px; /* You can adjust the size as needed */
+    color: #f9f9f9;
+    font-weight: 300;
+}
+
+#contentContainer {
+    text-align: center; /* Center the content horizontally */
+    position: absolute;
+    bottom: 5cm; /* Adjust the distance from the bottom as needed */
+    left: 0;
+    right: 0;
+}
+
+#text {
+    position: absolute;
+    font-size: 2cm;
+    color: #fff;
+    text-shadow: 20px 20px 20px rgba(2, 29, 22, 0.9);
+
+}
+#NextSection {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 80%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: #103d35; /* Facebook blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-decoration: none;
+}
+
+#facebookButton {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 45%; /* Adjust the top position to center the button vertically over the text */
+    left: 50%; /* Adjust the left position to center the button horizontally over the text */
+    transform: translate(-50%, -50%); /* Center the button using translate */
+    background-color: #103d35; /* Facebook blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+}
+
+#facebookButton:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+}
+
+#NextSection:hover {
+    background-color:#94e9b5;
+    transition: 0.7s;
+    color: #031f16;
+}
+
+#facebookButton {
+    opacity: 1;
+    transition: opacity 1.5s; 
+}
+
+#NextSection {
+    opacity: 1;
+    transition: opacity 3.5s; 
+}
+
+
+/* THIRD SECTION */
+
+#tapsilog {
+    text-align: center;
+  }  
+
+#hotsilog {
+    text-align: center;
+}
+
+.Achievements {
+    position: relative;
+    background: #c4fff3;
+    padding: 100px;
+}
+
+.Achievements h2 {
+    font-size: 1cm;
+    color: #031f16;
+    margin-bottom: 10px;
+}
+
+.Achievements p {
+    font-size: 14px; /* You can adjust the size as needed */
+    color: #031f16;
+    font-weight: 300;
+}
+
+/* FOURTH SECTION */
+
+#mangInasal {
+    text-align: center;
+  }  
+
+#jollibee {
+    text-align: center;
+}
+
+#rukawa {
+    width: 500px;
+    height: auto;
+}
+.Contacts {
+    position: relative;
+    background: #003329;
+    padding: 20px;
+}
+
+.Contacts h2 {
+    font-size: 1cm;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.Contacts p {
+    font-size: 14px; /* You can adjust the size as needed */
+    color: #f9f9f9;
+    font-weight: 300;
+}
+/* FOOTER NA COPY PASTE LMAO */
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #011612;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #1e6624;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">JMBM</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#Skills">Skills</a>
+            <a href="#AchievementsAnc">Portfolio</a>
+            <a href="#ContactsAnc">Contact</a>
+        </nav>
+    </header>
+
+    <section class="parallax">
+        <img src="hill1.png" id="hill1">
+        <img src="birds.png" id = "birds">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <img src="leaf.png" id="leaf"> 
+        <img src="plant.png" id="plant">
+    
+        <div id="contentContainer">
+            <button id="facebookButton" class="facebookButton" onclick="openFacebookLink()">Facebook</button>
+        </div>
+    
+        <a href="#Skills" id="NextSection" class="button">Next Page</a>
+        
+        <h2 id="text">Justine Mae Macario</h2>
+    </section>
+
+    <section id="Skills" class="Skills">
+        <h2 id="aboutTitle">About Me</h2>
+        <p id="biography">
+            Biography <br>
+            Justine Mae B. Macario: I am a Computer Science student from the University of Cordilleras. <br> I finished both my junior and senior high school in Baguio City National Science High and <br> my elementary in Pacday Quinio Elementary School.<br><br><br>
+        </p>
+
+        <h2 id="egg">My Skills</h2> 
+        <p id="hotdog"> 
+            Aiming to emulate industry-level illustrations and efficient programs in the future! <br> I have a strong suit in:<br> 1. Procrastination<br> 2. Mathematical Reasoning<br> 3. Drawing<br> 4. Sleeping<br> 5. Eating<br>
+            <br>
+        </p>   
+    </section>
+
+    <section id="AchievementsAnc" class="Achievements">
+        <h2 id="tapsilog">Achievements Section</h2>
+        <p id="hotsilog">
+            Educational Attainment (3) 
+            Elementary Report Card
+            Junior High Diploma
+            Senior High Diploma
+            Parents (Mom and Dad) 
+            
+            Achievements: Under Construction 
+            New Faculty: Under Construction 
+
+            KM. 4 Asin Road, Baguio City, Philippines <br>
+            +63 74 442 3316 · +63 74 442 2564 · +63 74 442 8219. <br>
+            Macariojustinemae@Gmail.Com <br>
+            Https://Pontimpen.Blogspot.Com/ <br>
+        </p>
+    </section>
+
+    <section id="ContactsAnc" class="Contacts">
+        <h2 id="mangInasal">Contacts Section</h2>
+        <p id="jollibee">
+            Under Construction
+            Comments and More (I have no idea how to do this)
+        </p>
+        <img src="i love him so much.jpg" id="rukawa">
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Justine Mae Macario</h4>
+                </div>
+                <div class="footer-col">
+                    <h4>Portfolio Output for CC1</h4>
+                </div>
+                <div class="footer-col">
+                    <h4>CITCS 1D</h4>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let text = document.getElementById('text');
+        let leaf = document.getElementById('leaf');
+        let hill1 = document.getElementById('hill1');
+        let hill4 = document.getElementById('hill4');
+        let hill5 = document.getElementById('hill5');
+        let birds = document.getElementById('birds');
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+
+            text.style.marginTop = value * 2.5 + 'px';
+            leaf.style.top = value * -1.5 + 'px';
+            leaf.style.left = value * 1.5 + 'px';
+            hill5.style.left = value * 1.5 + 'px';
+            hill4.style.left = value * -1.5 + 'px';
+            birds.style.marginTop = value * -2.5 + 'px';
+            birds.style.marginLeft = value * 2.5 + 'px';
+        });
+    </script>
+
+    <script>
+        function openFacebookLink() {
+            var facebookLink = 'https://www.facebook.com/jastinme.wewwaw';
+            window.open(facebookLink, '_blank');
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navigationLinks = document.querySelectorAll(".navigation a");
+
+            navigationLinks.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        const button = document.getElementById("facebookButton");
+        const section = document.getElementById("Skills");
+        
+        window.addEventListener("scroll", () => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const sectionBottom = section.getBoundingClientRect().bottom;
+
+            if (sectionTop < window.innerHeight && sectionBottom > 0) {
+                button.style.opacity = "0";
+            } else {
+                button.style.opacity = "1";
+            }
+        });
+
+        const nextButton = document.getElementById("NextSection");
+
+        nextButton.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const targetId = "Skills"; // Replace with the ID of the section you want to scroll to
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+        targetSection.scrollIntoView({
+            behavior: "smooth"
+            });
+        }
+    });
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

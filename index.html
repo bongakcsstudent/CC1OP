@@ -1,0 +1,158 @@
+<!-- BASIC STUFF -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTheme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FIRST SECTION -->
+    <header>
+        <h2 class="logo">JMBM</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#Skills">Skills</a>
+            <a href="#AchievementsAnc">Portfolio</a>
+            <a href="#ContactsAnc">Contact</a>
+        </nav>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navigationLinks = document.querySelectorAll(".navigation a");
+
+            navigationLinks.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <section class="parallax">
+        <img src="hill1.png" id="hill1">
+        <img src="birds.png" id="birds">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <img src="leaf.png" id="leaf"> 
+        <img src="plant.png" id="plant">
+    
+        <div id="contentContainer">
+            <button id="facebookButton" class="facebookButton" onclick="openFacebookLink()">Facebook</button>
+        </div>
+    
+        <script>
+            function openFacebookLink() {
+                var facebookLink = 'https://www.facebook.com/jastinme.wewwaw';
+                window.open(facebookLink, '_blank');
+            }
+        </script>
+
+        <a href="#Skills" id="NextSection" class="button">Next Page</a>
+            <script>
+                document.getElementById('NextSection').addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default scroll behavior
+                const targetElement = document.querySelector(this.getAttribute('href'));
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                    });
+                }
+                });
+            </script>
+
+        <h2 id="text">Justine Mae Macario</h2>
+    
+    </section>
+
+<!-- SECOND SECTION -->
+    
+    <section id="Skills" class="Skills">
+        <h2 id="aboutTitle">About Me</h2>
+        <p id="biography">
+            Biography <br>
+            Justine Mae B. Macario: I am a Computer Science student from the University of Cordilleras. <br> I finished both my junior and senior high school in Baguio City National Science High and <br> my elementary in Pacday Quinio Elementary School.<br><br><br>
+        </p>
+
+        <h2 id="egg">My Skills</h2> 
+        <p id="hotdog"> 
+            Aiming to emulate industry -level illustrations and efficient programs in the future! <br> I have a strong suit in:<br> 1. Procrastination<br> 2. Mathematical Reasoning<br> 3. Drawing<br> 4. Sleeping<br> 5. Eating<br>
+            <br>
+        </p>   
+    </section>
+
+<!-- THIRD SECTION -->
+
+    <section id="AchievementsAnc" class="Achievements">
+        <h2 id="tapsilog">Achievements Section</h2>
+        <p id="hotsilog">
+            Eductional Attainment (3) 
+            Elementary Report Card
+            Junior High Diploma
+            Senior High Diploma
+            Parents (Mom and Dad) 
+            
+            Achievements: Under Construction 
+            New Faculty: Under Construction 
+
+            KM. 4 Asin Road, Baguio City, Philippines <br>
+            +63 74 442 3316 · +63 74 442 2564 · +63 74 442 8219. <br>
+            Macariojustinemae@Gmail.Com <br>
+            Https://Pontimpen.Blogspot.Com/ <br>
+        </p>
+    </section>
+
+<!-- FOURTH SECTION -->
+    <section id="ContactsAnc" class="Contacts">
+        <h2 id="mangInasal">Contacts Section</h2>
+        <p id="jollibee">
+            Under Construction
+            Comments and More (I have no idea how to do this)
+        </p>
+           <img src="i love him so much.jpg" id="rukawa">
+    </section>
+
+<!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Justine Mae Macario</h4>
+                </div>
+                <div class="footer-col">
+                    <h4>Portfolio Output for CC1</h4>
+                </div>
+                <div class="footer-col">
+                    <h4>CITCS 1D</h4>
+                    
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="script.js"></script>
+</body>
+</html>
